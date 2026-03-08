@@ -267,8 +267,9 @@ h1.hero-name em {
 /* FLOATING CODE SNIPPET */
 .code-float {
   position: absolute;
-  right: 60px; top: 50%;
-  transform: translateY(-50%);
+  left: calc(50% + 80px); /* move right */
+  top: 50%;
+  transform: translate(-50%, -50%);
   background: rgba(26,58,92,0.4);
   border: 1px solid rgba(58,143,196,0.2);
   backdrop-filter: blur(12px);

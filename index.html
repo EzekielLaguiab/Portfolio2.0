@@ -1,260 +1,405 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ezekiel Laguiab · Web Developer</title>
-<link rel="icon" type="image/jpg" href="assets/images/picture2.jpg">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ezekiel Laguiab · Web Developer</title>
+    <link rel="icon" type="image/jpg" href="assets/images/picture2.jpg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="grid-bg"></div>
+    <div class="noise"></div>
 
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
-<div class="grid-bg"></div>
-<div class="noise"></div>
-
-<!-- NAV -->
-<nav>
-  <a href="#hero" class="nav-logo">EL<span>.</span></a>
-  <div style="display:flex; align-items:center; gap:0;">
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Work</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode" title="Toggle theme">
-      <span class="toggle-icon" id="toggleIcon">☀️</span>
-      <div class="toggle-track">
-        <div class="toggle-thumb"></div>
+    <!-- NAV -->
+    <nav>
+      <a href="#hero" class="nav-logo">EL<span>.</span></a>
+      <div style="display: flex; align-items: center; gap: 0">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle light/dark mode"
+          title="Toggle theme"
+        >
+          <span class="toggle-icon" id="toggleIcon">☀️</span>
+          <div class="toggle-track">
+            <div class="toggle-thumb"></div>
+          </div>
+        </button>
       </div>
-    </button>
-  </div>
-</nav>
+    </nav>
 
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-inner">
-    <div class="hero-tag">Available for opportunities</div>
-    <h1 class="hero-name">Ezekiel<br><em>Laguiab</em></h1>
-    <div class="hero-role">Web Developer</div>
-    <p class="hero-desc">
-      I build responsive, user-friendly websites — from concept to deployment. Clean code, thoughtful design, meaningful results.
-    </p>
-    <div class="hero-ctas">
-      <a href="#projects" class="btn-primary">View My Work →</a>
-      <a href="#contact" class="btn-ghost">Get in Touch</a>
-    </div>
-  </div>
-
-  <div class="code-float">
-    <div style="margin-bottom:14px; display:flex; align-items:center; gap:8px;">
-      <span class="code-dot"></span>
-      <span style="font-size:10px; letter-spacing:0.12em; opacity:0.5; text-transform:uppercase;">ezekiel.style</span>
-    </div>
-    <span class="cm">// Turning ideas into interfaces</span><br>
-    <span class="kw">const</span> <span class="fn">developer</span> = {<br>
-    &nbsp;&nbsp;name: <span class="str">'Ezekiel Laguiab'</span>,<br>
-    &nbsp;&nbsp;role: <span class="str">'Web Developer'</span>,<br>
-    &nbsp;&nbsp;stack: [<span class="str">'HTML5'</span>, <span class="str">'CSS3'</span>,<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="str">'JavaScript'</span>],<br>
-    &nbsp;&nbsp;available: <span class="kw">true</span>,<br>
-    };<br><br>
-    <span class="fn">developer</span>.<span class="kw">build</span>(<span class="str">'your next project'</span>);
-  </div>
-
-  <div class="hero-scroll">
-    <div class="scroll-line"></div>
-    Scroll
-  </div>
-</section>
-
-<!-- STATS -->
-<div class="stats-bar">
-  <div class="stat">
-    <div class="stat-num">1<span>+</span></div>
-    <div class="stat-label">Years Experience</div>
-  </div>
-  <div class="stat">
-    <div class="stat-num">5<span>+</span></div>
-    <div class="stat-label">Projects Delivered</div>
-  </div>
-  <div class="stat">
-    <div class="stat-num">10<span>+</span></div>
-    <div class="stat-label">Technologies</div>
-  </div>
-  <div class="stat">
-    <div class="stat-num">100<span>%</span></div>
-    <div class="stat-label">Client Satisfaction</div>
-  </div>
-</div>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="about-text reveal">
-    <div class="section-eyebrow">About</div>
-    <h2 class="section-heading">Precise code.<br><em>Clear thinking.</em></h2>
-    <p>My academic journey provided me with a solid foundation in both hardware and software, allowing me to develop a diverse skill set in technical support, networking, hardware maintenance, and web development.</p>
-    <p>As I begin my professional journey, I am eager to contribute my skills to a forward-thinking company where I can grow, learn, and create meaningful digital solutions.</p>
-    <div class="skills-list">
-      <div class="skill-item">HTML5 / CSS3</div>
-      <div class="skill-item">JavaScript</div>
-      <div class="skill-item">Bootstrap</div>
-      <div class="skill-item">PHP / MySQL</div>
-      <div class="skill-item">Git &amp; GitHub</div>
-      <div class="skill-item">WordPress</div>
-      <div class="skill-item">XAMPP</div>
-      <div class="skill-item">Networking</div>
-    </div>
-  </div>
-  <div class="about-visual reveal">
-    <div class="about-photo">
-      <img src="assets/images/picture2.jpg" alt="Ezekiel Laguiab">
-    </div>
-    <div class="tech-stack">
-      <div class="tech-card"><span class="tech-icon">🌐</span><div class="tech-name">HTML5</div></div>
-      <div class="tech-card"><span class="tech-icon">🎨</span><div class="tech-name">CSS3</div></div>
-      <div class="tech-card"><span class="tech-icon">⚡</span><div class="tech-name">JavaScript</div></div>
-      <div class="tech-card"><span class="tech-icon">🅱</span><div class="tech-name">Bootstrap</div></div>
-      <div class="tech-card"><span class="tech-icon">🐘</span><div class="tech-name">PHP</div></div>
-      <div class="tech-card"><span class="tech-icon">🗄️</span><div class="tech-name">MySQL</div></div>
-      <div class="tech-card"><span class="tech-icon">🐙</span><div class="tech-name">GitHub</div></div>
-      <div class="tech-card"><span class="tech-icon">💙</span><div class="tech-name">VS Code</div></div>
-      <div class="tech-card"><span class="tech-icon">📝</span><div class="tech-name">WordPress</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="projects-inner">
-    <div class="projects-header reveal">
-      <div class="section-eyebrow">Work</div>
-      <h2 class="section-heading">Selected<br><em>Projects</em></h2>
-    </div>
-    <div class="projects-grid">
-      <div class="project-card reveal">
-        <div class="project-img">
-          <img src="assets/images/designvault.PNG" alt="DesignVault">
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-tag">Available for opportunities</div>
+        <h1 class="hero-name">Ezekiel<br /><em>Laguiab</em></h1>
+        <div class="hero-role">Web Developer</div>
+        <p class="hero-desc">
+          I build responsive, user-friendly websites — from concept to
+          deployment. Clean code, thoughtful design, meaningful results.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn-primary">View My Work →</a>
+          <a href="#contact" class="btn-ghost">Get in Touch</a>
         </div>
-        <div class="project-num">01</div>
-        <div class="project-tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">JavaScript</span>
-        </div>
-        <div class="project-title">DesignVault</div>
-        <p class="project-desc">Production-ready templates with full design systems — colors, typography, spacing, and components. Built for developers who want to learn and ship faster.</p>
-        <a href="https://ezekiellaguiab.github.io/DesignVault/" target="_blank" class="project-link">View Live Site →</a>
       </div>
-      <div class="project-card reveal">
-        <div class="project-img">
-          <img src="assets/images/Kumon.PNG" alt="Kumon Fishermall Website">
+
+      <div class="code-float">
+        <div
+          style="
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+          "
+        >
+          <span class="code-dot"></span>
+          <span
+            style="
+              font-size: 10px;
+              letter-spacing: 0.12em;
+              opacity: 0.5;
+              text-transform: uppercase;
+            "
+            >ezekiel.style</span
+          >
         </div>
-        <div class="project-num">02</div>
-        <div class="project-tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">JavaScript</span>
-        </div>
-        <div class="project-title">Kumon Fishermall</div>
-        <p class="project-desc">A modern and responsive website developed for Kumon Fishermall, designed to showcase the center's Math and Reading programs.</p>
-        <a href="https://ezekiellaguiab.github.io/Kumon2.0/" target="_blank" class="project-link">View Live Site →</a>
+        <span class="cm">// Turning ideas into interfaces</span><br />
+        <span class="kw">const</span> <span class="fn">developer</span> = {<br />
+        &nbsp;&nbsp;name: <span class="str">'Ezekiel Laguiab'</span>,<br />
+        &nbsp;&nbsp;role: <span class="str">'Web Developer'</span>,<br />
+        &nbsp;&nbsp;stack: [<span class="str">'HTML5'</span>,
+        <span class="str">'CSS3'</span>,<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+          class="str"
+          >'JavaScript'</span
+        >],<br />
+        &nbsp;&nbsp;available: <span class="kw">true</span>,<br />
+        };<br /><br />
+        <span class="fn">developer</span>.<span class="kw">build</span>(<span
+          class="str"
+          >'your next project'</span
+        >);
       </div>
-      <div class="project-card reveal">
-        <div class="project-img">
-          <img src="assets/images/Manu.PNG" alt="Manu's Craft Shop">
-        </div>
-        <div class="project-num">03</div>
-        <div class="project-tags">
-          <span class="tag">Bootstrap</span>
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">JavaScript</span>
-        </div>
-        <div class="project-title">Manu's Craft Shop</div>
-        <p class="project-desc">A responsive eCommerce website for handmade stone bracelets, featuring a clean layout and seamless shopping experience.</p>
-        <a href="https://ezekiellaguiab.github.io/Manuscraftshop/" target="_blank" class="project-link">View Live Site →</a>
+
+      <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        Scroll
       </div>
-      <div class="project-card reveal">
-        <div class="project-img">
-          <img src="assets/images/formandgrain.PNG" alt="Form & Grain">
-        </div>
-        <div class="project-num">04</div>
-        <div class="project-tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">JavaScript</span>
-        </div>
-        <div class="project-title">Form & Grain</div>
-        <p class="project-desc">A furniture-focused website that emphasizes clean visual design and layout, showcasing how thoughtful styling can bring a product-oriented brand to life.</p>
-        <a href="https://ezekiellaguiab.github.io/Form-Grain/" target="_blank" class="project-link">View Live Site →</a>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats-bar">
+      <div class="stat">
+        <div class="stat-num">1<span>+</span></div>
+        <div class="stat-label">Years Experience</div>
       </div>
-      <div class="project-card reveal">
-        <div class="project-num">05</div>
-        <div class="project-tags">
-          <span class="tag">Coming Soon</span>
-        </div>
-        <div class="project-title">Upcoming Project</div>
-        <p class="project-desc">More innovative and scalable web solutions currently in development. Stay tuned for exciting new work.</p>
-        <a href="#" class="project-link" style="opacity:0.45; pointer-events:none;">In Progress →</a>
+      <div class="stat">
+        <div class="stat-num">5<span>+</span></div>
+        <div class="stat-label">Projects Delivered</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">10<span>+</span></div>
+        <div class="stat-label">Technologies</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">100<span>%</span></div>
+        <div class="stat-label">Client Satisfaction</div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- SERVICES -->
-<section id="services">
-  <div class="services-inner">
-    <div class="services-header reveal">
-      <div class="section-eyebrow">Services</div>
-      <h2 class="section-heading">What I<br><em>Deliver</em></h2>
-    </div>
-    <div class="services-grid">
-      <div class="service-item reveal">
-        <div class="service-num">01</div>
-        <div class="service-title">Frontend Development</div>
-        <p class="service-desc">Responsive, pixel-perfect websites built with HTML5, CSS3, JavaScript, and Bootstrap — fast and accessible from day one.</p>
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="about-text reveal">
+        <div class="section-eyebrow">About</div>
+        <h2 class="section-heading">
+          Precise code.<br /><em>Clear thinking.</em>
+        </h2>
+        <p>
+          My academic journey provided me with a solid foundation in both
+          hardware and software, allowing me to develop a diverse skill set in
+          technical support, networking, hardware maintenance, and web
+          development.
+        </p>
+        <p>
+          As I begin my professional journey, I am eager to contribute my skills
+          to a forward-thinking company where I can grow, learn, and create
+          meaningful digital solutions.
+        </p>
+        <div class="skills-list">
+          <div class="skill-item">HTML5 / CSS3</div>
+          <div class="skill-item">JavaScript</div>
+          <div class="skill-item">Bootstrap</div>
+          <div class="skill-item">PHP / MySQL</div>
+          <div class="skill-item">Git &amp; GitHub</div>
+          <div class="skill-item">WordPress</div>
+          <div class="skill-item">XAMPP</div>
+          <div class="skill-item">Networking</div>
+        </div>
       </div>
-      <div class="service-item reveal">
-        <div class="service-num">02</div>
-        <div class="service-title">WordPress Development</div>
-        <p class="service-desc">Custom WordPress websites and themes tailored to your brand, with easy-to-manage content and clean design.</p>
+      <div class="about-visual reveal">
+        <div class="about-photo">
+          <img src="assets/images/picture2.jpg" alt="Ezekiel Laguiab" />
+        </div>
+        <div class="tech-stack">
+          <div class="tech-card">
+            <span class="tech-icon">🌐</span>
+            <div class="tech-name">HTML5</div>
+          </div>
+          <div class="tech-card">
+            <span class="tech-icon">🎨</span>
+            <div class="tech-name">CSS3</div>
+          </div>
+          <div class="tech-card">
+            <span class="tech-icon">⚡</span>
+            <div class="tech-name">JavaScript</div>
+          </div>
+          <div class="tech-card">
+            <span class="tech-icon">🅱</span>
+            <div class="tech-name">Bootstrap</div>
+          </div>
+          <div class="tech-card">
+            <span class="tech-icon">🐘</span>
+            <div class="tech-name">PHP</div>
+          </div>
+          <div class="tech-card">
+            <span class="tech-icon">🗄️</span>
+            <div class="tech-name">MySQL</div>
+          </div>
+          <div class="tech-card">
+            <span class="tech-icon">🐙</span>
+            <div class="tech-name">GitHub</div>
+          </div>
+          <div class="tech-card">
+            <span class="tech-icon">💙</span>
+            <div class="tech-name">VS Code</div>
+          </div>
+          <div class="tech-card">
+            <span class="tech-icon">📝</span>
+            <div class="tech-name">WordPress</div>
+          </div>
+        </div>
       </div>
-      <div class="service-item reveal">
-        <div class="service-num">03</div>
-        <div class="service-title">Backend & Database</div>
-        <p class="service-desc">PHP and MySQL powered web applications with structured databases, user auth, and reliable server-side logic.</p>
-      </div>
-      <div class="service-item reveal">
-        <div class="service-num">04</div>
-        <div class="service-title">Technical Support</div>
-        <p class="service-desc">Hardware troubleshooting, networking setup, and system maintenance — keeping your infrastructure running smoothly.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-eyebrow" style="justify-content:center; margin-bottom:24px;">Contact</div>
-  <h2 class="contact-heading reveal">Let's build<br><em>something.</em></h2>
-  <p class="contact-sub reveal">Have a project in mind or just want to connect? I'm always open to the right opportunity.</p>
-  <a href="mailto:zeke.laguiab@gmail.com" class="contact-email">
-    zeke.laguiab@gmail.com
-  </a>
-  <div class="social-links reveal">
-    <a href="https://github.com/EzekielLaguiab" target="_blank" class="social-link">⚡ GitHub</a>
-    <a href="https://linkedin.com/in/ezekiel-laguiab-3755b3327" target="_blank" class="social-link">💼 LinkedIn</a>
-  </div>
-</section>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="projects-inner">
+        <div class="projects-header reveal">
+          <div class="section-eyebrow">Work</div>
+          <h2 class="section-heading">Selected<br /><em>Projects</em></h2>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card reveal">
+            <div class="project-img">
+              <img src="assets/images/designvault.PNG" alt="DesignVault" />
+            </div>
+            <div class="project-num">01</div>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-title">DesignVault</div>
+            <p class="project-desc">
+              Production-ready templates with full design systems — colors,
+              typography, spacing, and components. Built for developers who want
+              to learn and ship faster.
+            </p>
+            <a
+              href="https://ezekiellaguiab.github.io/DesignVault/"
+              target="_blank"
+              class="project-link"
+              >View Live Site →</a
+            >
+          </div>
+          <div class="project-card reveal">
+            <div class="project-img">
+              <img
+                src="assets/images/Kumon.PNG"
+                alt="Kumon Fishermall Website"
+              />
+            </div>
+            <div class="project-num">02</div>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-title">Kumon Fishermall</div>
+            <p class="project-desc">
+              A modern and responsive website developed for Kumon Fishermall,
+              designed to showcase the center's Math and Reading programs.
+            </p>
+            <a
+              href="https://ezekiellaguiab.github.io/Kumon2.0/"
+              target="_blank"
+              class="project-link"
+              >View Live Site →</a
+            >
+          </div>
+          <div class="project-card reveal">
+            <div class="project-img">
+              <img src="assets/images/Manu.PNG" alt="Manu's Craft Shop" />
+            </div>
+            <div class="project-num">03</div>
+            <div class="project-tags">
+              <span class="tag">Bootstrap</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-title">Manu's Craft Shop</div>
+            <p class="project-desc">
+              A responsive eCommerce website for handmade stone bracelets,
+              featuring a clean layout and seamless shopping experience.
+            </p>
+            <a
+              href="https://ezekiellaguiab.github.io/Manuscraftshop/"
+              target="_blank"
+              class="project-link"
+              >View Live Site →</a
+            >
+          </div>
+          <div class="project-card reveal">
+            <div class="project-img">
+              <img src="assets/images/formandgrain.PNG" alt="Form & Grain" />
+            </div>
+            <div class="project-num">04</div>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-title">Form & Grain</div>
+            <p class="project-desc">
+              A furniture-focused website that emphasizes clean visual design
+              and layout, showcasing how thoughtful styling can bring a
+              product-oriented brand to life.
+            </p>
+            <a
+              href="https://ezekiellaguiab.github.io/Form-Grain/"
+              target="_blank"
+              class="project-link"
+              >View Live Site →</a
+            >
+          </div>
+          <div class="project-card reveal">
+            <div class="project-num">05</div>
+            <div class="project-tags">
+              <span class="tag">Coming Soon</span>
+            </div>
+            <div class="project-title">Upcoming Project</div>
+            <p class="project-desc">
+              More innovative and scalable web solutions currently in
+              development. Stay tuned for exciting new work.
+            </p>
+            <a
+              href="#"
+              class="project-link"
+              style="opacity: 0.45; pointer-events: none"
+              >In Progress →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-<footer>
-  <p>© 2026 Ezekiel Laguiab · All rights reserved</p>
-  <div class="footer-mark">EL<span>.</span></div>
-</footer>
-<script src="script.js"></script>
-</body>
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="services-inner">
+        <div class="services-header reveal">
+          <div class="section-eyebrow">Services</div>
+          <h2 class="section-heading">What I<br /><em>Deliver</em></h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-item reveal">
+            <div class="service-num">01</div>
+            <div class="service-title">Frontend Development</div>
+            <p class="service-desc">
+              Responsive, pixel-perfect websites built with HTML5, CSS3,
+              JavaScript, and Bootstrap — fast and accessible from day one.
+            </p>
+          </div>
+          <div class="service-item reveal">
+            <div class="service-num">02</div>
+            <div class="service-title">WordPress Development</div>
+            <p class="service-desc">
+              Custom WordPress websites and themes tailored to your brand, with
+              easy-to-manage content and clean design.
+            </p>
+          </div>
+          <div class="service-item reveal">
+            <div class="service-num">03</div>
+            <div class="service-title">Backend & Database</div>
+            <p class="service-desc">
+              PHP and MySQL powered web applications with structured databases,
+              user auth, and reliable server-side logic.
+            </p>
+          </div>
+          <div class="service-item reveal">
+            <div class="service-num">04</div>
+            <div class="service-title">Technical Support</div>
+            <p class="service-desc">
+              Hardware troubleshooting, networking setup, and system maintenance
+              — keeping your infrastructure running smoothly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div
+        class="section-eyebrow"
+        style="justify-content: center; margin-bottom: 24px"
+      >
+        Contact
+      </div>
+      <h2 class="contact-heading reveal">
+        Let's build<br /><em>something.</em>
+      </h2>
+      <p class="contact-sub reveal">
+        Have a project in mind or just want to connect? I'm always open to the
+        right opportunity.
+      </p>
+      <a href="mailto:zeke.laguiab@gmail.com" class="contact-email">
+        zeke.laguiab@gmail.com
+      </a>
+      <div class="social-links reveal">
+        <a
+          href="https://github.com/EzekielLaguiab"
+          target="_blank"
+          class="social-link"
+          >⚡ GitHub</a
+        >
+        <a
+          href="https://linkedin.com/in/ezekiel-laguiab-3755b3327"
+          target="_blank"
+          class="social-link"
+          >💼 LinkedIn</a
+        >
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Ezekiel Laguiab · All rights reserved</p>
+      <div class="footer-mark">EL<span>.</span></div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

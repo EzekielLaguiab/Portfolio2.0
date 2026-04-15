@@ -621,6 +621,99 @@ h1.hero-name em {
   }
 }
 
+/* ── VIDEOS ── */
+#videos {
+  position: relative;
+  z-index: 2;
+  padding: 100px 60px;
+}
+.videos-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.videos-header {
+  margin-bottom: 56px;
+}
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.video-card {
+  background: rgba(26, 58, 92, 0.25);
+  border: 1px solid rgba(58, 143, 196, 0.12);
+  padding: 0;
+  padding-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+.video-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--sky), transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+  z-index: 10;
+}
+.video-card:hover::before {
+  transform: scaleX(1);
+}
+.video-card:hover {
+  background: rgba(26, 58, 92, 0.45);
+  border-color: rgba(58, 143, 196, 0.3);
+  transform: translateY(-4px);
+}
+
+.video-container {
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+  background: rgba(6, 15, 24, 0.6);
+  overflow: hidden;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  margin: 20px 24px 8px 24px;
+  line-height: 1.2;
+}
+.video-desc {
+  font-size: 13px;
+  color: rgba(127, 179, 211, 0.7);
+  line-height: 1.75;
+  font-weight: 300;
+  margin: 0 24px;
+}
+
+@media (max-width: 700px) {
+  #videos {
+    padding: 60px 24px;
+  }
+  .videos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ── SERVICES ── */
 #services {
   position: relative;

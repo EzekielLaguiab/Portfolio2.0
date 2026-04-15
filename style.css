@@ -875,11 +875,28 @@ footer p {
   font-size: 9px;
 }
 .toggle-icon {
-  font-size: 13px;
+  width: 18px;
+  height: 18px;
   line-height: 1;
   transition: opacity 0.2s;
   user-select: none;
   color: var(--mist);
+}
+
+.sun-icon {
+  display: block;
+}
+
+.moon-icon {
+  display: none;
+}
+
+body.light .sun-icon {
+  display: none;
+}
+
+body.light .moon-icon {
+  display: block;
 }
 
 /* ── LIGHT MODE ── */

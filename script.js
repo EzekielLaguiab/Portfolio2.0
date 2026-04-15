@@ -1,19 +1,16 @@
 // Theme toggle
 const toggle = document.getElementById("themeToggle");
-const icon = document.getElementById("toggleIcon");
 let isLight = false;
 
 // Respect system preference on load
 if (window.matchMedia("(prefers-color-scheme: light)").matches) {
   isLight = true;
   document.body.classList.add("light");
-  icon.textContent = "🌙";
 }
 
 toggle.addEventListener("click", () => {
   isLight = !isLight;
   document.body.classList.toggle("light", isLight);
-  icon.textContent = isLight ? "🌙" : "☀️";
 });
 
 // Scroll reveal

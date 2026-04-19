@@ -1129,12 +1129,30 @@ body.light .project-title {
 body.light .project-desc {
   color: rgba(43, 97, 137, 0.75);
 }
+body.light .video-card {
+  background: #ffffff;
+  border-color: rgba(58, 143, 196, 0.18);
+  box-shadow: 0 2px 12px rgba(26, 58, 92, 0.07);
+}
+body.light .video-card:hover {
+  background: #ffffff;
+  border-color: rgba(58, 143, 196, 0.4);
+}
+body.light .video-title {
+  color: #111111;
+}
+body.light .video-desc {
+  color: rgba(43, 97, 137, 0.78);
+}
 body.light .project-num {
   color: rgba(58, 143, 196, 0.18);
 }
 body.light .tag {
   color: var(--blue);
   border-color: rgba(58, 143, 196, 0.3);
+}
+body.light #videos {
+  background: #ffffff;
 }
 
 body.light #services {
